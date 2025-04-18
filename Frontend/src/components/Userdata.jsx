@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Userdata = ({res}) => {
+const Userdata = ({data ,value}) => {
+
+    async function TopFivedata() {
+        const mostComment =       
+    }
+
   return (
-    <div>Userdata</div>
+    <>
+        <h1> Username = {value}</h1>
+    </>
   )
 }
 

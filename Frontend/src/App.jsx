@@ -23,10 +23,15 @@ const App = () => {
   },[]);
   return (
     <div>
+      <h1>Top Five User with Most Comments</h1>
       {
+
         userData.map(res => {
-          console.log(res);
-          return <Userdata res={res}></Userdata>
+          return Object.keys(res).map(data =>{
+            let value = res[data];
+            // console.log(value);
+            return <Userdata data={data} value={value} ></Userdata>
+          })
         })
       }
     </div>
